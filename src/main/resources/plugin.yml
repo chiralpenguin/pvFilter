@@ -1,0 +1,8 @@
+name: pvChat
+main: com.purityvanilla.pvfilter.PVFilter
+version: 1.0
+api-version: 1.21
+authors: [chiralpenguin]
+description: Filter plugin for the Purity Vanilla Minecraft server
+folia-supported: true
+depend: [pvLib]

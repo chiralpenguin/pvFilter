@@ -1,0 +1,4 @@
+{
+  "reload-plugin": "<aqua>Reloading pvFilter",
+  "reload-complete": "<aqua>Reloaded config.yml, blocked_words.txt, blocked_symbols.txt and messages.json"
+}

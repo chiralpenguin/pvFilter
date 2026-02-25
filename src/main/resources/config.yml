@@ -1,0 +1,5 @@
+# pvFilter version 1.0
+enable-content-filter: true
+replacement-string: '****'
+
+verbose: false
