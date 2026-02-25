@@ -1,4 +1,4 @@
-name: pvChat
+name: pvFilter
 main: com.purityvanilla.pvfilter.PVFilter
 version: 1.0
 api-version: 1.21
