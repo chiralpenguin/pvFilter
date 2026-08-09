@@ -19,12 +19,12 @@ public class Config extends ConfigFile {
     private final boolean verbose;
 
     public Config(Logger logger) {
-        super("plugins/pvChat/config.yml");
-        messages = new Messages(this, "plugins/pvChat/messages.json");
+        super("plugins/pvFilter/config.yml");
+        messages = new Messages(this, "plugins/pvFilter/messages.json");
 
         Set<Integer> loadedChars = Set.of();
         try {
-            loadedChars = readBlockedCharacters("plugins/pvChat/blocked_chars.txt");
+            loadedChars = readBlockedCharacters("plugins/pvFilter/blocked_chars.txt");
         } catch (IOException e) {
             logger.severe("Could not read blocked_chars.txt! Ensure the file exists and is valid.");
         }
@@ -33,7 +33,7 @@ public class Config extends ConfigFile {
         Set<String> loadedStrings = new HashSet<>();
         Set<String> loadedWords = new HashSet<>();
         try {
-            for (String line : readBlockedStrings("plugins/pvChat/blocked_words.txt")) {
+            for (String line : readBlockedStrings("plugins/pvFilter/blocked_words.txt")) {
                 if (line.startsWith("*")) {
                     loadedStrings.add(line.substring(1).strip());
                 } else {
