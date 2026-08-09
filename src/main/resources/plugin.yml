@@ -6,3 +6,8 @@ authors: [chiralpenguin]
 description: Filter plugin for the Purity Vanilla Minecraft server
 folia-supported: true
 depend: [pvLib]
+commands:
+  reload:
+    description: Reloads the plugin's configs and messages
+    usage: /pvfilter-reload
+    permission: pvfilter.reload
